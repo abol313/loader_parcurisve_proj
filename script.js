@@ -1,7 +1,9 @@
+
+
 const path = document.getElementById("p_path");
 
 //percently value in circum
-const maxCircum = 88, minCircum = 30
+const maxCircum = 99, minCircum = 30
 let circum = minCircum
 let step = .5
 
@@ -10,12 +12,12 @@ let strokeWidth = maxStrokeWidth
 
 setInterval(
     ()=>{
-        if(step>0 && circum<88){
+        if(step>0 && circum<maxCircum){
             circum += step
             strokeWidth = Math.max(minStrokeWidth,Math.min(maxStrokeWidth,strokeWidth - (maxStrokeWidth-minStrokeWidth) * step/(maxCircum-minCircum)))
         }else{
             if(step>0)step=-.5
-            if(step<0 && circum<30)step = .5
+            if(step<0 && circum<minCircum)step = .5
             circum += step 
             strokeWidth = Math.max(minStrokeWidth,Math.min(maxStrokeWidth,strokeWidth - (maxStrokeWidth-minStrokeWidth) * step/(maxCircum-minCircum)))
         }
