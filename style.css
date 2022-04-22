@@ -8,12 +8,18 @@ body{
     min-height:100vh;
 }
 svg{
+    --path-color:cyan;
     overflow:visible;
     animation:rotate_anim 3s alternate infinite;
+    stroke:var(--path-color) !important;
 }
 
 @keyframes rotate_anim{
-    from{transform:rotate(0deg);}
+    from{
+        transform:rotate(0deg);
+        filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(0deg) blur(0px);}
 
-    to{transform:rotate(1000deg);}
+    to{
+        transform:rotate(1000deg);
+        filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(360deg) blur(3px);}
 }
