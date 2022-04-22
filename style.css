@@ -9,4 +9,11 @@ body{
 }
 svg{
     overflow:visible;
+    animation:rotate_anim 3s alternate infinite;
+}
+
+@keyframes rotate_anim{
+    from{transform:rotate(0deg);}
+
+    to{transform:rotate(1000deg);}
 }
