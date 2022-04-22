@@ -1,4 +1,6 @@
-
+/*<!--In the name of kindly generous ALLAH-->
+<!--Thanks ALLAH-->
+ */
 
 const path = document.getElementById("p_path");
 
