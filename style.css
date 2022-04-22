@@ -12,6 +12,8 @@ svg{
     overflow:visible;
     animation:rotate_anim 3s alternate infinite;
     stroke:var(--path-color) !important;
+    max-width:300px;
+    max-height:300px;
 }
 
 @keyframes rotate_anim{
@@ -23,3 +25,4 @@ svg{
         transform:rotate(1000deg);
         filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(360deg) blur(3px);}
 }
+
