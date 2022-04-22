@@ -1,4 +1,9 @@
 body{
+    margin:0;
     background-color:#151515;
     color:cyan;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
