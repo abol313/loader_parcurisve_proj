@@ -2,6 +2,8 @@
 <!--Thanks ALLAH-->
  */
 
+alert("you will b😮️😮️mmmmmmmm....");
+
 const path = document.getElementById("p_path");
 
 //percently value in circum
