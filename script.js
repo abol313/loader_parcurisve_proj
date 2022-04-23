@@ -4,7 +4,6 @@
 
 alert("you will b😮️😮️mmmmmmmm....");
 
-document.getElementsByTagName("svg")[0].style.animationPlayState = "running"
 
 const path = document.getElementById("p_path");
 
@@ -16,12 +15,19 @@ let step = .5
 const maxStrokeWidth=40,minStrokeWidth=15
 let strokeWidth = maxStrokeWidth
 
+let startedAnimation = false
+
+
 setInterval(
     ()=>{
         if(step>0 && circum<maxCircum){
             circum += step
             strokeWidth = Math.max(minStrokeWidth,Math.min(maxStrokeWidth,strokeWidth - (maxStrokeWidth-minStrokeWidth) * step/(maxCircum-minCircum)))
         }else{
+            if(!startedAnimation){
+                startedAnimation = true
+                document.getElementsByTagName("svg")[0].style.animation = "rotate_anim 3s alternate infinite"
+            }
             if(step>0)step=-.5
             if(step<0 && circum<minCircum)step = .5
             circum += step 
