@@ -22,10 +22,10 @@ svg{
 @keyframes rotate_anim{
     from{
         transform:rotate(0deg);
-        filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(0deg) blur(0px);}
+        filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(0deg) blur(3px);}
 
     to{
         transform:rotate(1000deg);
-        filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(360deg) blur(3px);}
+        filter:drop-shadow(0 0 10px var(--path-color)) hue-rotate(360deg) blur(0px);}
 }
 
