@@ -13,7 +13,7 @@ body{
 svg{
     --path-color:cyan;
     overflow:visible;
-    animation:rotate_anim 3s 8s alternate infinite;
+    animation:rotate_anim 3s 8s alternate infinite paused;
     stroke:var(--path-color) !important;
     max-width:300px;
     max-height:300px;

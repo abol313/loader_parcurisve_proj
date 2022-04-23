@@ -4,6 +4,8 @@
 
 alert("you will b😮️😮️mmmmmmmm....");
 
+document.getElementsByTagName("svg")[0].style.animationPlayState = "running"
+
 const path = document.getElementById("p_path");
 
 //percently value in circum
