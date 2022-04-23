@@ -9,7 +9,7 @@ const path = document.getElementById("p_path");
 
 //percently value in circum
 const maxCircum = 99, minCircum = 30
-let circum = minCircum
+let circum = 0
 let step = .5
 
 const maxStrokeWidth=40,minStrokeWidth=15
